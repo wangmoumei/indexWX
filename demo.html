@@ -1,0 +1,267 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>
+			这是一个demo
+		</title>
+		<link rel="stylesheet" href="css/fontello.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+		<style>
+			#menuBox{
+				position: absolute;
+				top:0;right:0;bottom:0;left:0;	
+				background: rgba(0,0,0,.7);
+				display: none;box-sizing: border-box;
+			}
+			#menuBox *{padding:0;margin:0;font-family: '微软雅黑'}
+			#menuBox li{list-style: none;}
+			#menuBox a{text-decoration: none;color: #333;}
+			#menuBox ul{
+				max-width: 800px;margin:0 auto;overflow: hidden;
+			}
+			#menuBox ul li{
+				float: left;
+				width: 33.3333333%;
+				box-sizing: border-box;
+				opacity: 0;
+			}
+			#menuBox ul li a{
+				display: block;
+				color:#fff;
+				outline: 0;
+			}
+			#menuBox ul li a div{
+				background: #106ff1;
+				width: 60px;
+				height: 60px;
+				font-size: 26px;
+				padding: 17px 0;
+				box-sizing: border-box;
+				margin:0 auto;
+				text-align: center;
+				border-radius: 40px;
+			}
+			#menuBox ul li a p{
+				text-align: center;
+				font-size:14px;
+				padding: 8px 0;
+			}
+			#menuBox ul li.active a div{
+				background: #fff;
+				color:#106ff1;
+				border: 2px solid #106ff1;
+			}
+			#myMenu{
+				position: fixed;
+				bottom: 20px;
+				left: 20px;
+				width: 50px;
+				height: 50px;
+				font-size: 28px;
+				padding: 11px 0;
+				box-sizing: border-box;
+				box-shadow: 0px 0px 2px 1px rgba(0,0,0,.2);
+				border: 2px solid #fff;
+				background: #106ff1;
+				color:#fff;
+				border-radius: 27px;
+				text-align: center;
+			}
+			.oShow{
+				opacity: 1;
+				-webkit-animation: .3s oShow;
+				-moz-animation: .3s oShow;
+				animation: .3s oShow;
+			}
+			@-webkit-keyframes oShow {
+				0% { opacity: .3 }
+				100% { opacity: 1 }
+			}
+			@-moz-keyframes oShow {
+				0% { opacity: .3 }
+				100% { opacity: 1 }
+			}
+			@keyframes oShow{
+				0% { opacity: .3 }
+				100% { opacity: 1 }
+			}
+			.oHide{
+				opacity: 0;
+				-webkit-animation: .2s oHide;
+				-moz-animation: .2s oHide;
+				animation: .2s oHide;
+			}
+			@-webkit-keyframes oHide {
+				0% { opacity: 1 }
+				100% { opacity: 0 }
+			}
+			@-moz-keyframes oHide {
+				0% { opacity: 1 }
+				100% { opacity: 0 }
+			}
+			@keyframes oHide{
+				0% { opacity: 1 }
+				100% { opacity: 0 }
+			}
+			.bShow{
+				position: relative;
+				opacity: 1 !important;
+				-webkit-animation: .5s bShow;
+				-moz-animation: .5s bShow;
+				animation: .5s bShow;
+			}
+			@-webkit-keyframes bShow {
+				0% { bottom: -100px;opacity: 0; }
+				100% { bottom: 0 ;opacity: 1;}
+			}
+			@-moz-keyframes bShow {
+				0% { bottom: -100px;opacity: 0; }
+				100% { bottom: 0 ;opacity: 1;}
+			}
+			@keyframes bShow{
+				0% { bottom: -100px;opacity: 0; }
+				100% { bottom: 0 ;opacity: 1;}
+			}
+			.bHide{
+				position: relative;
+				opacity: 0 !important;
+				-webkit-animation: .2s bHide;
+				-moz-animation: .2s bHide;
+				animation: .2s bHide;
+			}
+			@-webkit-keyframes bHide {
+				0% { bottom: 0;opacity: 1; }
+				100% { bottom: 100px ;opacity: 0;}
+			}
+			@-moz-keyframes bHide {
+				0% { bottom: 0;opacity: 1; }
+				100% { bottom: 100px ;opacity: 0;}
+			}
+			@keyframes bHide{
+				0% { bottom: 0;opacity: 1; }
+				100% { bottom: 100px ;opacity: 0;}
+			}
+		</style>
+	</head>
+	<body>
+		<div>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</div>
+		<div id="myMenu"><i class="icon-menu"></i></div>
+		<div id="menuBox">
+			<ul>
+				<li class="active">
+					<a href="#">
+						<div><i class="icon-glass"></i></div>
+						<p>首页</p>
+					</a>
+				</li> 
+				<li>
+					<a href="#">
+						<div><i class="icon-music"></i></div>
+						<p>首页</p>
+					</a>
+				</li> 
+				<li>
+					<a href="#">
+						<div><i class="icon-search"></i></div>
+						<p>首页</p>
+					</a>
+				</li> 
+				<li>
+					<a href="#">
+						<div><i class="icon-user"></i></div>
+						<p>首页</p>
+					</a>
+				</li> 
+				<li>
+					<a href="#">
+						<div><i class="icon-gamepad"></i></div>
+						<p>首页</p>
+					</a>
+				</li> 
+				<li>
+					<a href="#">
+						<div><i class="icon-home"></i></div>
+						<p>首页</p>
+					</a>
+				</li> 
+				<li>
+					<a href="#">
+						<div><i class="icon-pin"></i></div>
+						<p>首页</p>
+					</a>
+				</li> 
+				<li>
+					<a href="#">
+						<div><i class="icon-tag"></i></div>
+						<p>首页</p>
+					</a>
+				</li> 
+			</ul>
+		</div>
+		<script>
+			var Menu = function(){
+				var lst = [],b,u,m,timer,that = this;
+				this.init = function(){
+					b = document.getElementById("menuBox");
+					lst = b.getElementsByTagName('li');
+					u = b.getElementsByTagName("ul")[0];
+					m = document.getElementById("myMenu");
+					b.onclick = function(e){
+						if(e.target.id == "menuBox"){
+							that.hide();
+						}
+					}
+					m.onclick=function(){
+						that.show();
+					}
+				};
+				this.show = function(){
+					b.style.display="block";
+					b.className = 'oShow';
+					m.className = 'oHide';
+					var h = document.documentElement.clientHeight||document.body.clientHeight;
+					u.style.marginTop = (((h - u.clientHeight) / 2) < 0) ? 0 : ((h - u.clientHeight) / 2) + "px";
+					var i=0;
+					for(;i<lst.length;i++){
+						lst[i].className = lst[i].className.replace(/bHide/, "");
+						lst[i].className = lst[i].className.replace(/bShow/, "");
+					}
+					i=0;
+					timer = setInterval(function(){
+						if(i >= lst.length-1 ) {clearInterval(timer);timer=null;}
+						var c = lst[i].className
+						if(/bHide/.test(c))
+							lst[i].className = c.replace(/bHide/, "bShow");
+						else
+							lst[i].className = c + (c.charAt(c.length - 1) == " " ?'bShow':' bShow');
+						i++;
+					},100);
+				};
+				this.hide = function(){
+					if(timer)clearInterval(timer);
+					b.className = 'oHide';
+					for(var i=0;i<lst.length;i++){
+						lst[i].className = lst[i].className.replace(/bShow/, "bHide");
+					}
+					setTimeout(function(){
+						b.style.display="none";
+						m.className = 'oShow';
+					},180)
+				};
+				this.Toggle = function(){
+					if(b.className == 'oShow'){
+						that.hide();
+					}else
+						that.show();
+				}
+			}
+			var m = new Menu();
+			m.init();
+			
+		</script>
+	</body>
+	
+	
+	
+	
+</html>

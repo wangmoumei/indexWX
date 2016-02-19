@@ -1,0 +1,122 @@
+﻿wo<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <title>宁波大学后勤微服务平台</title>
+    <link rel="stylesheet" href="css/frozen.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+    <header class="ui-header ui-header-positive ui-border-b" style="background-color:#228feb">
+        <h1>宁波大学后勤微服务平台</h1>
+    </header>
+    <section class="ui-container">
+        <section id="slider">
+            <div class="ui-slider" id="slider1">
+                <ul class="ui-slider-content" style="width: 300%">
+                    <li><span style="background-image:url(images/banner.jpg)"></span></li>
+                    <li><span style="background-image:url(images/banner.jpg)"></span></li>
+                    <li><span style="background-image:url(images/banner.jpg)"></span></li>
+                </ul>
+                <script class="demo-script">
+                    (function () {
+                        var slider = new fz.Scroll('#slider1', {
+                            role: 'slider',
+                            indicator: true,
+                            autoplay: true,
+                            interval: 3000
+                        });
+
+                        /*slider.on('beforeScrollStart', function (fromIndex, toIndex) {
+                            console.log(fromIndex, toIndex)
+                        });
+
+                        slider.on('scrollEnd', function (cruPage) {
+                            console.log(cruPage)
+                        });*/
+                    })();
+                </script>
+            </div>
+        </section>
+        <section id="menu" class="ui-border-tb">
+            <ul class="ui-row">
+                <li class="ui-col ui-col-25">
+                    <a class="blue">
+                        <i class="iconfont"></i>
+                        <div>报修</div>
+                    </a>
+                </li>
+                <li class="ui-col ui-col-25">
+                    <a class="blue" href="contacts.html">
+                        <i class="iconfont"></i>
+                        <div>电话本</div>
+                    </a>
+                </li>
+                <li class="ui-col ui-col-25">
+                    <a class="blue">
+                        <i class="iconfont"></i>
+                        <div>留言板</div>
+                    </a>
+                </li>
+                <li class="ui-col ui-col-25">
+                    <a class="blue">
+                        <i class="iconfont"></i>
+                        <div>失物招领</div>
+                    </a>
+                </li>
+                <li class="ui-col ui-col-25">
+                    <a class="blue">
+                        <i class="iconfont"></i>
+                        <div>活动投票</div>
+                    </a>
+                </li>
+                <li class="ui-col ui-col-25">
+                    <a class="blue">
+                        <i class="iconfont"></i>
+                        <div>水电缴纳</div>
+                    </a>
+                </li>
+                <li class="ui-col ui-col-25">
+                    <a class="blue">
+                        <i class="iconfont"></i>
+                        <div>新闻</div>
+                    </a>
+                </li>
+                <li class="ui-col ui-col-25">
+                    <a class="blue">
+                        <i class="iconfont"></i>
+                        <div>通知公告</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="news">
+
+            <div class="sec-title ui-border-t">
+                通知公告
+                <a>更多</a>
+            </div>
+
+            <ul class="ui-list ui-list-pure ui-list-active ui-list-cover ui-border-tb ui-list-link">
+                <li class="ui-border-t">
+                    <p>2015-08-19</p>
+                    <h4 class="ui-nowrap">08月20日至23日停水通知</h4>
+                </li>
+                <li class="ui-border-t">
+                    <p>2015-04-03</p>
+                    <h4 class="ui-nowrap">04月06日至07日停电通知</h4>
+                </li>
+            </ul>
+
+        </section>
+    <footer>杭州格式科技有限公司©后勤宝 技术支持</footer>
+    </section><!-- /.ui-container-->
+</body>
+</html>
